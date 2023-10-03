@@ -15,7 +15,7 @@
 
 char ssid[] = "Wokwi-GUEST";
 char psk[] = "";						// If no password leave it like this = "";
-char api_key[] = "XYG8GQ99SMVYAN5L";			// Api key from ThingSpeak ThingHTTP app
+char api_key[] = "SUVXV6GQOBQV1HHU";			// Api key from ThingSpeak ThingHTTP app
 char api_key_twitter[] = "";	// Api key from ThingSpeak ThingTweet app (optional)
 int port = 80;									// Port for TCP connection
 char buffer [64];								// Placeholder for handling data
@@ -39,7 +39,7 @@ void ESPinit(void)
 	printf("AT+CWJAP=\"%s\",\"%s\"\r\n",ssid,psk);
 
 	ping();					// Check if ready after reset
-//	waitFor(_OK);
+	//waitFor(_OK);
 	
 	// Client mode
 	printf("AT+CWMODE=1\r\n");

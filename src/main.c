@@ -34,18 +34,22 @@ void HandleButtonClick(int option){
     {
     case 1:
         lcd_puts("GOOD!");
+        addData("field1", 3);
         _delay_ms(350);
     break;
     case 2:
         lcd_puts("OKAY!");
+        addData("field1", 2);
         _delay_ms(350);
     break;
     case 3:
         lcd_puts("BAD!");
+        addData("field1", 1);
         _delay_ms(350);
     break;
     }
 
+    pushData();
     lcd_message();
     return;
 }
@@ -84,6 +88,8 @@ int main(void)
     sei();
 
     lcd_init();
+
+    ESPinit();
 
     lcd_setup_sequence();
 
