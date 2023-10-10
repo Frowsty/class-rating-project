@@ -90,12 +90,7 @@ int main(void)
     sei();
 
     lcd_init();
-    lcd_enable_blinking();
-    //lcd_enable_cursor();
-
     init_serial();
-    lcd_set_cursor(0, 1);
-    lcd_puts("RESET          ");
     ESPinit();
 
     lcd_setup_sequence();

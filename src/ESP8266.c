@@ -25,16 +25,13 @@ int dataCount = 0;
 
 void ESPinit(void)
 {
+	lcd_puts("Connecting");
+	lcd_set_cursor(0, 1);
+	lcd_puts("To WiFi");
 	// Reset ESP8266
 	printf("AT+RST\r\n");
-	lcd_set_cursor(0,1);
-	lcd_puts("1            ");
 	_delay_ms(100);
-	lcd_set_cursor(0,1);
-	lcd_puts("2            ");
 	ping();					// Check if ready after reset
-	lcd_set_cursor(0,1);
-	lcd_puts("3            ");
 	
 	// Connect to Wi-Fi
 	printf("AT+CWJAP=\"%s\",\"%s\"\r\n",ssid,psk);

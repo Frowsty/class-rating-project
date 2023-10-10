@@ -57,7 +57,7 @@ void lcd_init(void) {
   LCD_PORT = LCD_PORT
     & ~(1 << LCD_EN)
     & ~(1 << LCD_RS);
-//    & ~(1 << LCD_RW);
+    //& ~(1 << LCD_RW);
 
   _delay_ms(4.1);
 
