@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <string.h>
 #include "lcd.h"
+#include "uart.h"
+#include "ESP8266.h"
 
 #define BIT_SET(a, b) ((a) |= (1ULL << (b)))
 #define BIT_CLEAR(a,b) ((a) &= ~(1ULL<<(b)))
@@ -17,7 +19,7 @@
 // B (digital pin 8 to 13)
 // C (analog input pins)
 // D (digital pins 0 to 7)
-// https://wokwi.com/projects/365067824797777921
+// https://wokwi.com/projects/376389913248575489
 
 
 #define BUTTON_PIN_1 0
@@ -88,7 +90,12 @@ int main(void)
     sei();
 
     lcd_init();
+    lcd_enable_blinking();
+    //lcd_enable_cursor();
 
+    init_serial();
+    lcd_set_cursor(0, 1);
+    lcd_puts("RESET          ");
     ESPinit();
 
     lcd_setup_sequence();

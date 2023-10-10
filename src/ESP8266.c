@@ -7,6 +7,7 @@
 #include <string.h>
 #include <util/delay.h>
 #include "lcd.h"
+#include "uart.h"
 #include "ESP8266.h"
 
 #define _OK "OK"
