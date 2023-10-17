@@ -90,6 +90,7 @@ int main(void)
     sei();
 
     lcd_init();
+    //_delay_ms(1000);
     init_serial();
     ESPinit();
 

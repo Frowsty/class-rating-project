@@ -13,7 +13,7 @@
 	#warning "LCD Using default pin"
 	#define LCD_RS 3
 	#define LCD_RW 2 // TODO - not use ALWAYAS GROUND
-	#define LCD_EN 1
+	#define LCD_EN 2
 	#define LCD_D0 4
 	#define LCD_D1 5
 	#define LCD_D2 6
