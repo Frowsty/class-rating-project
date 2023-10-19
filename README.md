@@ -1,9 +1,9 @@
 # class-rating-project
 
-This is a group project by:
-**Daniel Barbis**
-**Sadiiq Kaysa**
-**Mohamud Abdi**
+This is a group project by:  
+**Daniel Barbis**  
+**Sadiiq Kaysa**  
+**Mohamud Abdi**  
 **Ahmed Melli**
 
 # Overview
