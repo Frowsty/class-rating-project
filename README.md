@@ -1,6 +1,6 @@
 # class-rating-project
 
-This is a group project by:  
+# Contributors
 **Daniel Barbis**  
 **Sadiiq Kaysa**  
 **Mohamud Abdi**  
