@@ -12,5 +12,11 @@ This project is a simple IoT class ratings system written in C, designed to work
 # Project Description 
 In this project we have implemented an IoT system for rating classes. The system allows users to rate their classes using a Wi-Fi connection through channels in ThingSpeak. It is developed in C and simulated using the Wokwi simulator with an Arduino Uno, with development managed through PlatformIO.
 
+# Installation
+1. Install [platformio](https://platformio.org/install/ide?install=vscode)
+2. Clone the project
+3. Open in VSCode
+4. Build project using Platformio in VSCode
+
 # Showcase
 ![](images/showcase.png)
